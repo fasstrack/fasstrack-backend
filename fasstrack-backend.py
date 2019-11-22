@@ -70,7 +70,7 @@ def craneNextTask(craneId):
   #     prepare delivery > delivery
 
 
-""""
+"""
   POST: register an existing crane to handle tasks
 """
 @app.route("crane/<craneId>/register", method=['POST'])
