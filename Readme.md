@@ -2,6 +2,8 @@
 
 This is the repo to demonstrate the Fasstrack team implementation.
 
+Located @: http://34.254.196.82:5000/hello
+ 
 ## Getting started
 
 ```
