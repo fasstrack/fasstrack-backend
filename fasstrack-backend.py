@@ -10,7 +10,7 @@ timetable = {
 
 containerLines = {
   "laneId1": {
-    bottom: {0:"fdsa", 1:"fdas"}
+    bottom: {0:"fdsa", 1:"fdas"},
     top: {0: "fda"}
   },
   "laneId2": {
