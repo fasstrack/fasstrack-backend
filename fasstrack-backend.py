@@ -49,8 +49,8 @@ def updateTruck(truckId):
   if request.method == 'POST':
     timetable[truckId] = request.json
     # TODO: return the placeID where the truck should collect the container
-    timetable[truckId].lane = "dafe121"
-    return timetable[truckId]
+    timetable[truckId]["lane"] = "dafe121"
+    return json.dumps({"slotId": timetable[truckId].lane});
   elif request.method == 'GET': 
     return json.dumps(timetable[truckId])
   return None
