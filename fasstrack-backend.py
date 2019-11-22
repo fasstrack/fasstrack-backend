@@ -10,8 +10,8 @@ timetable = {
 
 containerLines = {
   "laneId1": {
-    bottom: {0:"fdsa", 1:"fdas"},
-    top: {0: "fda"}
+    "bottom": {0:"fdsa", 1:"fdas"},
+    "top": {0: "fda"}
   },
   "laneId2": {
 
@@ -20,7 +20,7 @@ containerLines = {
 
 cranes = {
   "craneId": {
-    lane: "laneId"
+    "lane": "laneId"
   },
   "crandId": {
     # lane less crane means he can get used everywhere
@@ -58,7 +58,7 @@ def updateTruck(truckId):
 """
   GET: get the next task for a crane
 """
-@app.route("crane/<craneId>/nextTask", method=['GET'])
+@app.route("/crane/<craneId>/nextTask", methods=['GET'])
 def craneNextTask(craneId):
   # TODO: get next step to optimize the stack
   # is next container not available? -> make it accessable
@@ -68,15 +68,15 @@ def craneNextTask(craneId):
   #     else: chill mate 
   # else:
   #     prepare delivery > delivery
-
+  return None
 
 """
   POST: register an existing crane to handle tasks
 """
-@app.route("crane/<craneId>/register", method=['POST'])
+@app.route("/crane/<craneId>/register", methods=['POST'])
 def craneRegister(craneId):
   # TODO: add crane into database
   # if lanes not operated: put him into lane
   # else: let him help without lane
-
+  return None
 
