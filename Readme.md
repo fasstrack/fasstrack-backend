@@ -2,6 +2,25 @@
 
 This is the repo to demonstrate the Fasstrack team implementation.
 
+Located @: http://34.254.196.82:5000/hello
+ 
+## Getting started
+
+```
+ virtualenv env --python=python3
+``` 
+
+```
+ . env/bin/active 
+``` 
+
+```
+ pip install -r requirements.txt
+``` 
+``` 
+ env FLASK_APP=fasstrack-backend.py flask run
+``` 
+
 ## Curl calls:
 
 Get Timetable:
