@@ -131,8 +131,8 @@ def updateTruck(truckId):
     updateArrivalTime(truckId, arrivalTime)
     
     # TODO: return the placeID where the truck should collect the container
-    trucks[truckId]['lane'] = "dafe121"
-    return trucks[truckId]
+    timetable[truckId]["lane"] = "dafe121"
+    return json.dumps({"slotId": timetable[truckId].lane});
   elif request.method == 'GET': 
     return json.dumps(trucks[truckId])
   return None
